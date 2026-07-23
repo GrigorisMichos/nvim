@@ -1,0 +1,110 @@
+\documentclass[10pt,final,journal,letterpaper,twoside,twocolumn]{IEEEtran}
+\IEEEoverridecommandlockouts     
+
+\pdfminorversion=4
+
+
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{graphics} % for pdf, bitmapped graphics files Note: Load first graphics and then epstopdf
+\usepackage[outdir=./]{epstopdf}
+\usepackage{comment}
+%
+% TIKZ figures
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+ \usetikzlibrary{plotmarks}
+ \usetikzlibrary{arrows.meta}
+ \usepgfplotslibrary{patchplots}
+ \usepackage{grffile}
+\usepackage{tikz}
+\usetikzlibrary{shapes, fit, decorations.markings, matrix, positioning, fit, spy, patterns, shadows, calc, backgrounds, arrows.meta,spy}
+\usepackage[american]{circuitikz} 
+% - - - -  Colour and Shapes  - - - -%
+\definecolor{mustard}{RGB}{7,194,201} 
+\tikzstyle{place}=[circle,draw=black!50,fill=mustard, thick,  inner sep=0pt,minimum size=8mm]
+\tikzstyle{connection}=[circle,fill=black,inner sep=1.5pt]
+\usepackage{mathrsfs}
+% - - - -  Colours  - - - -%
+\definecolor{node_colour}{HTML}{CFF0FC}
+
+
+% - - - - 	Shapes		 - - - -%
+\tikzstyle{place}=[circle,dashed, draw=black!50, thick,  inner sep=0pt,minimum size=15mm]
+\tikzstyle{connection}=[circle,fill=black,inner sep=1.5pt]
+
+
+% figures
+\usepackage[font=footnotesize,caption=false]{subfig}
+\usepgfplotslibrary{fillbetween}
+
+
+% Math packages
+\let\proof\relax \let\endproof\relax
+\usepackage{mathtools} % assumes amsmath package installed
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathdots}
+\usepackage{commath}
+\usepackage{bbm}
+\usepackage{dsfont}
+\DeclareMathOperator{\sech}{sech}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage{multicol}
+\usepackage{empheq}
+
+% Theorems commands
+\newtheorem{theorem}{Theorem}%[section]
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}%[section]
+\newtheorem{assumption}{Assumption}
+\newtheorem{case}{Case}
+\theoremstyle{definition} 
+\newtheorem{definition}{Definition}%[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+% Frequent used expressions
+\newcommand{\ts}[1]{{\textnormal{#1}}}
+\newcommand{\diff}[2]{{\frac{d #1}{d #2}}}
+\newcommand{\pdiff}[2]{{\frac{\partial #1}{\partial #2}}}
+\newcommand{\ie}{\emph{i.e.}\ }
+\newcommand{\ith}{$i^{\ts{th}} \ $}
+\newcommand{\jth}{$j^{\ts{th}} \ $}
+\newcommand{\eg}{\emph{e.g.}\ }
+\newcommand{\cf}{\emph{c.f.}\ }
+\newcommand{\Nset}{\mathbb{N}}
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Cset}{\mathbb{C}}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbf}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ms}{\mathscr}
+\newcommand\st{\colon~}
+\newcommand{\ov}{\overline}
+
+\usepackage{cite}
+
+
+\title{Title}
+%
+%
+\author{A1 A2% <-this % stops a space
+\thanks{thanks}.%
+}
+
+\begin{document}
+\maketitle
+
+\cite{Michos2022}
+
+\bibliographystyle{IEEEtran}
+\bibliography{/Users/grigoris/Documents/zotero/library}
+
+\end{document}
+
