@@ -2,6 +2,9 @@ return {
   "lervag/vimtex",
   lazy = false, -- Recommended by VimTeX author
   init = function()
+    -- Disable VimTeX indentation
+    vim.g.vimtex_indent_enabled = 0
+
     -- 1. Use Sioyek as the viewer
     vim.g.vimtex_view_method = "sioyek"
 
