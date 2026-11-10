@@ -91,4 +91,12 @@ return {
       "\\end{figure}",
     }),
   }),
+  --
+  -- \left ... \right delimiters
+  s("lr(", { t("\\left( "), i(1), t(" \\right)"), i(0) }),
+  s("lr[", { t("\\left[ "), i(1), t(" \\right]"), i(0) }),
+  s("lr{", { t("\\left\\{ "), i(1), t(" \\right\\}"), i(0) }),
+  s("lr|", { t("\\left| "), i(1), t(" \\right|"), i(0) }),
+  s("lr<", { t("\\left\\langle "), i(1), t(" \\right\\rangle"), i(0) }),
+  s("lrn", { t("\\left\\| "), i(1), t(" \\right\\|"), i(0) }),
 }
